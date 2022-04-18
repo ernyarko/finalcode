@@ -1,0 +1,255 @@
+html,
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body{
+    background-image: url('images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: fixed;
+    background-size: 70%;
+    z-index: 0;   
+}
+
+*{
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Star Rating section*/
+.section-one{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+}
+
+.unseen-left{
+    background-image: url('images/bg-pattern-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 40%;
+    margin: 0;
+    z-index: 0;
+}
+
+.container{
+    height: auto;
+    margin: 0 auto 5rem;
+    width: 90%;
+}
+
+.customers{
+    flex: 1;
+    width: 28.125rem;
+}
+
+.customers h1{
+    font-weight: 800;
+    width: 25rem;
+    margin-bottom: 0.3125rem;
+    color: #511f50;
+    font-size: 3.5rem;
+}
+
+.customers p{
+    color: #9f969e;
+    width: 25rem;
+    line-height: 1.25rem;
+    font-weight: normal;    
+}
+
+.star ul{
+    text-align: center;
+    list-style-type: none;
+    color: #511f50;    
+    float: right;
+}
+
+.star-one,
+.star-two,
+.star-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1.2rem 2.5rem;
+    background-color: #f7f2f8; 
+    margin: 1rem 1rem;
+    position: relative;
+}
+
+.star-one{
+   right: 5rem;
+}
+
+.star-two{
+   right: 3rem;  
+}
+
+.star-one,
+.star-three{
+    padding-right: 6rem;
+}
+
+.stars{
+    margin-right: 1.5rem;
+}
+
+.stars img{
+    margin: 0 0.0875rem ;
+    height: 0.9rem;
+}
+
+
+/* Customers reviews*/
+.customers-review{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%; 
+}
+
+.review-one,
+.review-two,
+.review-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #511f50;
+    padding: 2rem;
+    max-width: 20rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.review-two{
+    margin: 0 2rem;
+    top: 1rem;
+}
+
+.review-three{
+    top: 2rem;
+}
+.reviews{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.8rem;  
+}
+
+.reviews img{
+    border-radius: 100% ;
+    height: 3rem;
+    margin-right: 1.5rem;
+}
+
+.name{
+    color: white;
+    line-height: 1.25rem;
+    font-weight: normal;
+}
+
+.text{
+    color: white;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.verify{
+    color: #8a4175;
+}
+
+
+/*mobile section*/
+@media screen and (max-width: 480px) {
+    p{
+        font-size: 0.625rem;
+    }
+    .container{
+        margin: 3rem auto;
+        
+    }
+
+    .section-one{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .customers{
+        text-align: center;
+        
+    }
+
+    .customers h1{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 11rem;
+        margin-bottom: 1rem;
+        margin: 0 auto; 
+    }
+
+    .customers p{
+        text-align: center;
+        width: 15rem;
+        margin: 0 auto;  
+    }
+
+    .star{
+        text-align: center;
+    }
+
+    .star ul{
+        float: none;
+    }
+
+    .star-one,
+    .star-two,
+    .star-three{
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+
+    .star-one{
+        right: 0;
+    }
+
+    .star-two{
+        right: 0;
+    }
+
+    .stars{
+        margin-right: 0;
+    }
+
+    .stars img{
+        margin-bottom: 0.5rem;
+    }
+
+    .unseen-left{
+        background-size: 78%;
+        margin: 0;
+    }
+
+    .customers-review{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-two{
+        margin: 0;
+    }
+
+    body{
+        background-size: 50%;
+        background-position: bottom right;
+    }
+}
+
